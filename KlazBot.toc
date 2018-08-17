@@ -8,5 +8,6 @@ Core\Config.lua
 Core\Temp.lua
 
 Modules\CombatLog.lua
+Modules\ConfirmDisenchant.lua
 Modules\GarbageCollection.lua
 Modules\Merchant.lua
