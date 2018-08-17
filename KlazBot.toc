@@ -1,0 +1,12 @@
+## Interface: 80000
+## Title: Klaz|cff1994ffBot|r
+## Author: Klaz
+## Notes: A virtual assistant to automate repetitive tasks.
+
+Core\Localization.lua
+Core\Config.lua
+Core\Temp.lua
+
+Modules\CombatLog.lua
+Modules\GarbageCollection.lua
+Modules\Merchant.lua
