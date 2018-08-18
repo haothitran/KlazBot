@@ -10,4 +10,5 @@ Core\Temp.lua
 Modules\CombatLog.lua
 Modules\ConfirmDisenchant.lua
 Modules\GarbageCollection.lua
+Modules\Mail.lua
 Modules\Merchant.lua
