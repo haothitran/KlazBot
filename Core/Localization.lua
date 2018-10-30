@@ -16,6 +16,13 @@ end })
 -- // ENGLISH
 --------------------------------------------------------------------------------
 
+L.KLAZ_INSTALL = 'Install personal settings for Klaz?\nNot recommended.\nThis will also force a /reloadui.'
+
+L.CHAT_TAB_LOG = 'Log'
+L.CHAT_TAB_RAID = 'Raid'
+L.CHAT_TAB_GUILD = 'Guild'
+L.CHAT_TAB_DRAMA = 'Drama'
+
 L.MERCHANT_REPAIR = "Repair cost"
 L.MERCHANT_GUILD = "Guild repair cost"
 L.MERHCANT_BROKE = "Not enough gold to cover repair cost"

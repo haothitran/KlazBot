@@ -5,6 +5,8 @@
 
 Core\Localization.lua
 Core\Config.lua
+Core\Commands.lua
+Core\Install.lua
 Core\Temp.lua
 
 Modules\CombatLog.lua
