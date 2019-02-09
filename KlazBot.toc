@@ -15,4 +15,5 @@ Modules\Fixes.lua
 Modules\GarbageCollection.lua
 Modules\Mail.lua
 Modules\Merchant.lua
+Modules\ObjectiveTracker.lua
 Modules\Range.lua
