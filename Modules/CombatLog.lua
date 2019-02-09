@@ -13,13 +13,11 @@ f:SetScript("OnEvent", function()
 	if instanceType == "raid" and IsInRaid(LE_PARTY_CATEGORY_HOME) then
 		if not LoggingCombat() then
 			LoggingCombat(1)
-			RaidNotice_AddMessage(RaidWarningFrame, COMBATLOGENABLED, {r = .098, g = .58, b = 1}, 3)
 			print("|cff1994ff"..COMBATLOGENABLED.."|r")
 		end
 	else
 		if LoggingCombat() then
 			LoggingCombat(0)
-			RaidNotice_AddMessage(RaidWarningFrame, COMBATLOGDISABLED, {r = .098, g = .58, b = 1}, 3)
 			print("|cff1994ff"..COMBATLOGDISABLED.."|r")
 		end
 	end
