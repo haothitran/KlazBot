@@ -5,21 +5,19 @@ local L = ns.L
 -- // CORE / INSTALL
 --------------------------------------------------------------------------------
 
-local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
-local height = 150
-local width = 500
-
-local seperateDrama = true
-local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 200}
-local heightDrama = 80
-
-local fontSize = 13
-
---------------------------------------------------------------------------------
--- // COMMAND
---------------------------------------------------------------------------------
-
 local function KlazInstall()
+
+  -- settings
+  local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
+  local height = 200
+  local width = 400
+  local fontSize = 13
+
+  -- settings for seperate whisper
+  local seperateDrama = false
+  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 200}
+  local heightDrama = 80
+
   -- set cvars
   -- controls
   SetCVar('autoDismountFlying', 0)
@@ -121,6 +119,16 @@ local function KlazInstall()
 	ChatFrame_AddMessageGroup(ChatFrame1, 'COMBAT_FACTION_CHANGE')
 	ChatFrame_AddMessageGroup(ChatFrame1, 'LOOT')
 	ChatFrame_AddMessageGroup(ChatFrame1, 'MONEY')
+
+  if seperateDrama ~= true then
+    ChatFrame_AddMessageGroup(ChatFrame1, 'OFFICER')
+    ChatFrame_AddMessageGroup(ChatFrame1, 'WHISPER')
+    ChatFrame_AddMessageGroup(ChatFrame1, 'BN_WHISPER')
+    ChatFrame_AddMessageGroup(ChatFrame1, 'BN_CONVERSATION')
+    ChatFrame_AddMessageGroup(ChatFrame1, 'CHANNEL4')
+    ChatFrame_AddMessageGroup(ChatFrame1, 'CHANNEL5')
+    ChatFrame_AddMessageGroup(ChatFrame1, 'CHANNEL6')
+  end
 
   -- channels for raid
   ChatFrame_RemoveAllMessageGroups(ChatFrame3)

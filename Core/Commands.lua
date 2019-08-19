@@ -23,6 +23,10 @@ end
 SLASH_TELEPORT1 = '/tp'
 SLASH_TELEPORT2 = '/teleport'
 
+SlashCmdList.RESETINSTANCES = function() ResetInstances() end
+SLASH_RESETINSTANCES1 = '/rd'
+SLASH_RESETINSTANCES2 = '/ri'
+
 SlashCmdList.CLEARCHAT = function()
   for i = 1, NUM_CHAT_WINDOWS do
     _G[format('ChatFrame%d', i)]:Clear()
@@ -30,38 +34,9 @@ SlashCmdList.CLEARCHAT = function()
 end
 SLASH_CLEARCHAT1 = '/clearchat'
 
---------------------------------------------------------------------------------
--- // TEST
---------------------------------------------------------------------------------
-
-SlashCmdList.TESTACHIEVEMENT = function()
-  PlaySound(SOUNDKIT.LFG_REWARDS)
-	if not AchievementFrame then
-		AchievementFrame_LoadUI()
-	end
-	AchievementAlertSystem:AddAlert(112)
-	CriteriaAlertSystem:AddAlert(9023, 'Doing great!')
-	GuildChallengeAlertSystem:AddAlert(3, 2, 5)
-	InvasionAlertSystem:AddAlert(678, 'Legion', true, 1, 1)
-	MoneyWonAlertSystem:AddAlert(815)
-	NewRecipeLearnedAlertSystem:AddAlert(204)
-end
-SLASH_TESTACHIEVEMENT1 = '/tach'
-
-SlashCmdList.TESTEXTRACTIONBUTTON = function()
-  if ExtraActionBarFrame:IsShown() then
-    ExtraActionBarFrame:Hide()
-  else
-    ExtraActionBarFrame:Show()
-    ExtraActionBarFrame:SetAlpha(1)
-    ExtraActionButton1:Show()
-    ExtraActionButton1:SetAlpha(1)
-    ExtraActionButton1.icon:SetTexture('Interface\\Icons\\Achievement_bg_winwsg')
-    ExtraActionButton1.icon:Show()
-    ExtraActionButton1.icon:SetAlpha(1)
-  end
-end
-SLASH_TESTEXTRACTIONBUTTON1 = '/teab'
+SlashCmdList.CALENDAR = function() ToggleCalendar() end
+SLASH_CALENDAR1 = "/cl"
+SLASH_CALENDAR2 = "/calendar"
 
 --------------------------------------------------------------------------------
 -- // ALIGN
