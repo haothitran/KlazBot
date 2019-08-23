@@ -35,8 +35,8 @@ end
 SLASH_CLEARCHAT1 = '/clearchat'
 
 SlashCmdList.CALENDAR = function() ToggleCalendar() end
-SLASH_CALENDAR1 = "/cl"
-SLASH_CALENDAR2 = "/calendar"
+SLASH_CALENDAR1 = '/cl'
+SLASH_CALENDAR2 = '/calendar'
 
 --------------------------------------------------------------------------------
 -- // ALIGN

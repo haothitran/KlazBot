@@ -2,7 +2,7 @@
 -- // MODULES / OBJECTIVE TRACKER
 --------------------------------------------------------------------------------
 
-local otf = _G["ObjectiveTrackerFrame"]
+local otf = _G['ObjectiveTrackerFrame']
 
 otf.HeaderMenu.Title:SetAlpha(0)
 

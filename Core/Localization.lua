@@ -7,9 +7,9 @@ ns.L = L
 --------------------------------------------------------------------------------
 
 setmetatable(L, { __index = function(t, k)
-	local v = tostring(k)
-	t[k] = v
-	return v
+  local v = tostring(k)
+  t[k] = v
+  return v
 end })
 
 --------------------------------------------------------------------------------
@@ -23,17 +23,17 @@ L.CHAT_TAB_RAID = 'Raid'
 L.CHAT_TAB_GUILD = 'Guild'
 L.CHAT_TAB_DRAMA = 'Drama'
 
-L.MERCHANT_REPAIR = "Repair cost"
-L.MERCHANT_GUILD = "Guild repair cost"
-L.MERHCANT_BROKE = "Not enough gold to cover repair cost"
+L.MERCHANT_REPAIR = 'Repair cost'
+L.MERCHANT_GUILD = 'Guild repair cost'
+L.MERHCANT_BROKE = 'Not enough gold to cover repair cost'
 
 local locale = GetLocale()
-if locale == "enUS" then return end
+if locale == 'enUS' then return end
 
 --------------------------------------------------------------------------------
 -- // FRENCH
 --------------------------------------------------------------------------------
 
--- if locale == "frFR" then
+-- if locale == 'frFR' then
 --
 -- return end

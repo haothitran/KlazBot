@@ -62,17 +62,17 @@ local function KlazInstall()
   -- general
   FCF_SetLocked(ChatFrame1, 1)
   -- log
-	FCF_DockFrame(ChatFrame2)
-	FCF_SetLocked(ChatFrame2, 1)
+  FCF_DockFrame(ChatFrame2)
+  FCF_SetLocked(ChatFrame2, 1)
   FCF_SetWindowName(ChatFrame2, L.CHAT_TAB_LOG)
   -- raid
-	FCF_OpenNewWindow(L.CHAT_TAB_RAID)
-	FCF_SetLocked(ChatFrame3, 1)
-	FCF_DockFrame(ChatFrame3)
+  FCF_OpenNewWindow(L.CHAT_TAB_RAID)
+  FCF_SetLocked(ChatFrame3, 1)
+  FCF_DockFrame(ChatFrame3)
   -- guild
   FCF_OpenNewWindow(L.CHAT_TAB_GUILD)
-	FCF_SetLocked(ChatFrame4, 1)
-	FCF_DockFrame(ChatFrame4)
+  FCF_SetLocked(ChatFrame4, 1)
+  FCF_DockFrame(ChatFrame4)
   -- drama
   FCF_OpenNewWindow(L.CHAT_TAB_DRAMA)
   if seperateDrama == true then
@@ -80,45 +80,45 @@ local function KlazInstall()
     ChatFrame5:Show()
   else
     FCF_SetLocked(ChatFrame5, 1)
-  	FCF_DockFrame(ChatFrame5)
+    FCF_DockFrame(ChatFrame5)
   end
 
   -- channels for general
   ChatFrame_RemoveAllMessageGroups(ChatFrame1)
   ChatFrame_AddChannel(ChatFrame1, TRADE)
-	ChatFrame_AddChannel(ChatFrame1, GENERAL)
-	ChatFrame_AddMessageGroup(ChatFrame1, 'SAY')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'EMOTE')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'YELL')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'GUILD')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'GUILD_ACHIEVEMENT')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_SAY')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_EMOTE')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_YELL')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_WHISPER')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_BOSS_EMOTE')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_BOSS_WHISPER')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'PARTY')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'PARTY_LEADER')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'RAID')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'RAID_LEADER')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'RAID_WARNING')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'INSTANCE_CHAT')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'INSTANCE_CHAT_LEADER')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'BG_HORDE')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'BG_ALLIANCE')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'BG_NEUTRAL')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'SYSTEM')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'ERRORS')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'AFK')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'DND')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'IGNORED')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'ACHIEVEMENT')
+  ChatFrame_AddChannel(ChatFrame1, GENERAL)
+  ChatFrame_AddMessageGroup(ChatFrame1, 'SAY')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'EMOTE')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'YELL')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'GUILD')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'GUILD_ACHIEVEMENT')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_SAY')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_EMOTE')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_YELL')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_WHISPER')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_BOSS_EMOTE')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONSTER_BOSS_WHISPER')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'PARTY')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'PARTY_LEADER')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'RAID')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'RAID_LEADER')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'RAID_WARNING')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'INSTANCE_CHAT')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'INSTANCE_CHAT_LEADER')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'BG_HORDE')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'BG_ALLIANCE')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'BG_NEUTRAL')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'SYSTEM')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'ERRORS')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'AFK')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'DND')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'IGNORED')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'ACHIEVEMENT')
   ChatFrame_AddMessageGroup(ChatFrame1, 'COMBAT_XP_GAIN')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'COMBAT_HONOR_GAIN')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'COMBAT_FACTION_CHANGE')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'LOOT')
-	ChatFrame_AddMessageGroup(ChatFrame1, 'MONEY')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'COMBAT_HONOR_GAIN')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'COMBAT_FACTION_CHANGE')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'LOOT')
+  ChatFrame_AddMessageGroup(ChatFrame1, 'MONEY')
 
   if seperateDrama ~= true then
     ChatFrame_AddMessageGroup(ChatFrame1, 'OFFICER')
@@ -229,15 +229,15 @@ local function KlazInstall()
 end
 
 StaticPopupDialogs.KLAZINSTALL = {
-	text = L.KLAZ_INSTALL,
-	button1 = ACCEPT,
-	button2 = CANCEL,
-	OnAccept = KlazInstall,
-	OnCancel = function() end,
-	timeout = 0,
-	whileDead = 1,
-	hideOnEscape = false,
-	preferredIndex = 5,
+  text = L.KLAZ_INSTALL,
+  button1 = ACCEPT,
+  button2 = CANCEL,
+  OnAccept = KlazInstall,
+  OnCancel = function() end,
+  timeout = 0,
+  whileDead = 1,
+  hideOnEscape = false,
+  preferredIndex = 5,
 }
 
 SlashCmdList.KLAZINSTALL = function() StaticPopup_Show('KLAZINSTALL') end
