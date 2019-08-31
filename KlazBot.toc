@@ -9,6 +9,7 @@ Core\Commands.lua
 Core\Install.lua
 Core\Temp.lua
 
+Modules\Align.lua
 Modules\CombatLog.lua
 Modules\Fixes.lua
 Modules\GarbageCollection.lua
