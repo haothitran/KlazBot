@@ -10,7 +10,6 @@ Core\Install.lua
 Core\Temp.lua
 
 Modules\CombatLog.lua
-Modules\ConfirmDisenchant.lua
 Modules\Fixes.lua
 Modules\GarbageCollection.lua
 Modules\Mail.lua
