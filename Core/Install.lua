@@ -20,7 +20,6 @@ local function KlazInstall()
 
   -- set cvars
   -- controls
-  SetCVar('autoDismountFlying', 0)
   SetCVar('autoLootDefault', 1)
   SetCVar('lootUnderMouse', 1)
   -- combat
