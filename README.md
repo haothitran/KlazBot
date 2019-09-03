@@ -9,7 +9,6 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 - Enable combat logging upon entering dungeon and raid instances.
 - Repair equipment at vendors.
 - Sell junk items at vendors.
-- Confirm disenchanting option when prompted.
 - Fill subject line in mail when only sending gold.
 - Various bug fixes that still exist in the WoW client.
 
