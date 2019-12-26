@@ -12,6 +12,5 @@ Core\Temp.lua
 Modules\Align.lua
 Modules\CombatLog.lua
 Modules\Fixes.lua
-Modules\GarbageCollection.lua
 Modules\Mail.lua
 Modules\Merchant.lua
