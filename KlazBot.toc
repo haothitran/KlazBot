@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 90001
 ## Title: Klaz|cff1994ffBot|r
 ## Author: Klaz
 ## Notes: A virtual assistant to automate repetitive tasks.
@@ -14,3 +14,4 @@ Modules\CombatLog.lua
 Modules\Fixes.lua
 Modules\Mail.lua
 Modules\Merchant.lua
+Modules\Range.lua
