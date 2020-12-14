@@ -9,14 +9,14 @@ local function KlazInstall()
 
   -- settings
   local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
-  local height = 120
+  local height = 200
   local width = 400
   local fontSize = 13
 
   -- settings for seperate whisper
   local seperateDrama = true
-  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 200}
-  local heightDrama = 80
+  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 280}
+  local heightDrama = 120
 
   -- set cvars
   -- controls
