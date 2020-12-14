@@ -9,7 +9,7 @@ SlashCmdList.READYCHECK = function() DoReadyCheck() end
 SLASH_READY1 = '/rc'
 SLASH_READY2 = '/readycheck'
 
-SlashCmdList.LEAVEGROUP = function() LeaveParty() end
+SlashCmdList.LEAVEGROUP = function() C_PartyInfo.LeaveParty() end
 SLASH_LEAVEGROUP1 = '/lp'
 SLASH_LEAVEGROUP2 = '/leave'
 
