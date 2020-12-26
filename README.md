@@ -10,6 +10,7 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 - Repair equipment at vendors.
 - Sell junk items at vendors.
 - Fill subject line in mail when only sending gold.
+- Better reputation colours.
 - Various bug fixes that still exist in the WoW client.
 
 ## Installation
