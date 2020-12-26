@@ -14,3 +14,4 @@ Modules\CombatLog.lua
 Modules\Fixes.lua
 Modules\Mail.lua
 Modules\Merchant.lua
+Modules\Reputation.lua
