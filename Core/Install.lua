@@ -240,5 +240,5 @@ StaticPopupDialogs.KLAZINSTALL = {
 }
 
 SlashCmdList.KLAZINSTALL = function() StaticPopup_Show('KLAZINSTALL') end
-SLASH_KLAZINSTALL1 = '/kinstall'
-SLASH_KLAZINSTALL2 = '/klazinstall'
+SLASH_KLAZINSTALL1 = '/klazinstall'
+SLASH_KLAZINSTALL2 = '/kinstall'
