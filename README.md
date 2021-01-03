@@ -7,11 +7,16 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 ## Features
 
 - Enable combat logging upon entering dungeon and raid instances.
-- Repair equipment at vendors.
-- Sell junk items at vendors.
-- Fill subject line in mail when only sending gold.
+- Automatically repair equipment at vendors.
+- Automatically sell junk (grey) items at vendors.
+- Automatically fill in subject line for mail containing only gold.
 - Better reputation colours.
 - Various bug fixes that still exist in the WoW client.
+
+## Slash Commands
+
+- `/klazinstall` to setup personal console variables (CVars) and chat settings.
+- `/klazalign` to display a grid on screen for positioning elements.
 
 ## Installation
 
