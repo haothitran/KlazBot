@@ -40,6 +40,22 @@ local function KlazInstall()
   SetCVar('Sound_EnableSoundWhenGameIsInBG', 1)
   SetCVar('Sound_EnableErrorSpeech', 0)
 
+
+  -- set unitframes
+  -- player
+  PlayerFrame:ClearAllPoints()
+  PlayerFrame:SetPoint('CENTER', UIParent,-248, -230)
+  PlayerFrame:SetUserPlaced(true)
+  -- target
+  TargetFrame:ClearAllPoints()
+  TargetFrame:SetPoint('CENTER',UIParent, 248, -230)
+  TargetFrame:SetUserPlaced(true)
+  -- focus
+  FocusFrame:ClearAllPoints()
+  FocusFrame:SetPoint('CENTER', UIParent, 312, -30)
+  FocusFrame:SetUserPlaced(true)
+
+
   -- set chat
   -- setting for main chat frame
   local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
