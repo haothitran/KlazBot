@@ -7,17 +7,6 @@ local L = ns.L
 
 local function KlazInstall()
 
-  -- settings
-  local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
-  local height = 200
-  local width = 400
-  local fontSize = 13
-
-  -- settings for seperate whisper
-  local seperateDrama = true
-  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 280}
-  local heightDrama = 120
-
   -- set cvars
   -- controls
   SetCVar('autoLootDefault', 1)
@@ -52,6 +41,17 @@ local function KlazInstall()
   SetCVar('Sound_EnableErrorSpeech', 0)
 
   -- set chat
+  -- setting for main chat frame
+  local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
+  local height = 200
+  local width = 400
+  local fontSize = 13
+
+  -- settings for seperate whisper
+  local seperateDrama = true
+  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 280}
+  local heightDrama = 120
+
   -- close all custom chat frames
   for i = 3, NUM_CHAT_WINDOWS do
     FCF_Close(_G['ChatFrame'..i])
