@@ -59,13 +59,13 @@ local function KlazInstall()
   -- set chat
   -- setting for main chat frame
   local position = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 20}
-  local height = 200
+  local height = 180
   local width = 400
   local fontSize = 13
 
   -- settings for seperate whisper
   local seperateDrama = true
-  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 280}
+  local positionDrama = {'BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 20, 260}
   local heightDrama = 120
 
   -- close all custom chat frames
