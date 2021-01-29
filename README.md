@@ -6,6 +6,7 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 
 ## Features
 
+- Force certain warning sounds to play even when sound effects are disabled.
 - Enable combat logging upon entering dungeon and raid instances.
 - Automatically repair equipment at vendors.
 - Automatically sell junk (grey) items at vendors.
